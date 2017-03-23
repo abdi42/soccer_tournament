@@ -1,0 +1,207 @@
+@import "http://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: #f0f3f4;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+
+/*
+*
+*  Stats Styles
+*
+*/
+
+#stats {
+  padding-left:15%;
+  padding-right:15%;
+}
+
+#wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:25px;
+  padding-right:5%;
+  padding-left:5%;
+}
+
+.card {
+  background-color: #fff;
+  padding: 25px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  line-height: 2;
+  box-shadow: 2px 2px 10px 0px #bdc3c7;
+  overflow:hidden;
+  display:inline-block;
+}
+
+.team img {
+  float:left;
+  max-width:25px;
+  vertical-align: middle;
+  margin-right:15px;
+}
+
+.team p {
+  margin:0px;
+}
+
+
+.team-heading {
+  width:40%;
+}
+
+.team {
+  display:flex !important;
+  align-items:center;
+}
+
+
+/*
+*
+* Table Style
+*
+*/
+
+.rwd-table {
+  margin: 1em 0;
+  width: 100%;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+
+tr:first-child {
+  border:none;
+}
+
+tr:first-child {
+  border:none;
+}
+
+@media (max-width:769px){
+  #wrapper {
+    padding-right:5%;
+    padding-left:5%;
+  }
+}
+
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+.rwd-table {
+  overflow: hidden;
+}
+
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 1em !important;
+  }
+
+
+}
+
+@media (max-width:480px) {
+  img {
+    display:none;
+  }
+
+  .team::before {
+    display:inline-block;
+  }
+}
+
+
+/*
+*
+* Font Sizes
+*
+*/
+
+/* Large Devices, 4K */
+
+@media only screen and (max-width: 2560px) {
+  #stats{
+    font-size:1.8em !important;
+  }
+}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1440px) {
+  #stats{
+    font-size:1.5em !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #stats{
+    font-size:1em !important;
+  }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  #stats{
+    font-size:1em !important;
+  }
+}
+
+@media only screen and (max-width:700px){
+  #stats {
+    padding-left:10%;
+    padding-right:10%;
+  }
+}

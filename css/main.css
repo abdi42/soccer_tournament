@@ -1,9 +1,18 @@
-.navbar-default{
-  box-shadow:none;
+html {
+  touch-action: manipulation;
+}
+
+.navbar-default {
   background-image:none;
   background-color:#c0392b !important;
   border-color:#c0392b !important;
   border-radius:0px;
+}
+
+.navbar-brand{
+  color:white;
+  font-size:1.5em;
+  margin-left:25px;
 }
 
 .navbar-default .navbar-brand {
@@ -12,4 +21,62 @@
 
 .navbar-default .navbar-nav>li>a{
   color:white;
+  text-shadow:none;
+}
+
+
+.navbar-brand {
+  text-shadow:none;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color:white !important;
+}
+
+
+.navbar-toggle {
+  border-color:#c0392b !important;
+}
+
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color:#c0392b !important;
+}
+
+.navbar-collapse {
+  border-top:none;
+}
+
+.nav .navbar-nav {
+  margin-right:25px !important;
+}
+
+.active a{
+  color:white !important;
+  background-image:none !important;
+  background-color:#962e22 !important;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+}
+
+.navbar-brand h4{
+  margin-top:15px;
+  padding-bottom:15px;
+  color:white;
+}
+
+
+a {
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+a:hover {
+  cursor:pointer;
 }
