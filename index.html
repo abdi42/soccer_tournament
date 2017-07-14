@@ -42,22 +42,22 @@
         <div class='dates container' >
           <a class='date ripple dateActive' via-href="dayone" href='#dayone'>
             <h3>SAT</h3>
-            <h1>30</h1>
+            <h1>29</h1>
             <p>3 Gms</p>
           </a>
           <a class='date' via-href="daytwo" href='#daytwo'>
             <h3>SUN</h3>
-            <h1>31</h1>
+            <h1>30</h1>
             <p>4 Gms</p>
           </a>
           <a class='date' via-href="daythree" href='#daythree'>
             <h3>SAT</h3>
-            <h1>6</h1>
+            <h1>5</h1>
             <p>4 Gms</p>
           </a>
           <a class='date' via-href="dayfour" href='#dayfour'>
             <h3>SUN</h3>
-            <h1>7</h1>
+            <h1>6</h1>
             <p>1 Gms</p>
           </a>
           <a class='date' via-href="dayfive" href='#dayfive'>
@@ -68,6 +68,16 @@
           <a class='date' via-href="daysix" href='#daysix'>
             <h3>SUN</h3>
             <h1>14</h1>
+            <p>2 Gms</p>
+          </a>
+          <a class='date' via-href="dayseven" href='#dayseven'>
+            <h3>SAT</h3>
+            <h1>20</h1>
+            <p>2 Gms</p>
+          </a>
+          <a class='date' via-href="daysix" href='#daysix'>
+            <h3>SUN</h3>
+            <h1>21</h1>
             <p>2 Gms</p>
           </a>
         </div>
@@ -208,7 +218,7 @@
     </script>
     <script type="text/javascript">
       var old = $('.date')[0]
-      $('.date').click(function(element){
+      $('#calendar .date').click(function(element){
         $(old).toggleClass('dateActive')
         old = element.delegateTarget;
         $(element.delegateTarget).toggleClass("dateActive")
