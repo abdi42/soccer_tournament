@@ -355,8 +355,8 @@ h2 {
 
 @media only screen and (min-width: 1200px) {
   #matches {
-      padding-left: 9%;
-      padding-right: 9%;
+      padding-left: 15%;
+      padding-right: 15%;
   }
 
   .left_wrapper{
@@ -377,8 +377,8 @@ h2 {
 
 @media only screen and (min-width: 2560px) {
   #matches {
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 15%;
+      padding-right: 15%;
   }
   h1,h2,h3,h4  {
       font-size: 3em !important;

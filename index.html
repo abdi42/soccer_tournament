@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/matches.min.css">
     <link rel="stylesheet" href="css/calendar.min.css">
+    <link rel="stylesheet" href="css/stats.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
@@ -42,132 +43,227 @@
         <div class='dates container' >
           <a class='date ripple dateActive' via-href="dayone" href='#dayone'>
             <h3>SAT</h3>
+            <p>Jul</p>
             <h1>29</h1>
             <p>3 Gms</p>
           </a>
           <a class='date' via-href="daytwo" href='#daytwo'>
             <h3>SUN</h3>
+            <p>Jul</p>
             <h1>30</h1>
             <p>4 Gms</p>
           </a>
           <a class='date' via-href="daythree" href='#daythree'>
             <h3>SAT</h3>
+            <p>Aug</p>
             <h1>5</h1>
             <p>4 Gms</p>
           </a>
           <a class='date' via-href="dayfour" href='#dayfour'>
             <h3>SUN</h3>
+            <p>Aug</p>
             <h1>6</h1>
             <p>1 Gms</p>
           </a>
+        </div>
+        <div class='dates container'>
           <a class='date' via-href="dayfive" href='#dayfive'>
             <h3>SAT</h3>
+            <p>Aug</p>
             <h1>13</h1>
             <p>2 Gms</p>
           </a>
           <a class='date' via-href="daysix" href='#daysix'>
             <h3>SUN</h3>
+            <p>Aug</p>
             <h1>14</h1>
             <p>2 Gms</p>
           </a>
           <a class='date' via-href="dayseven" href='#dayseven'>
             <h3>SAT</h3>
+            <p>Aug</p>
             <h1>20</h1>
             <p>2 Gms</p>
           </a>
-          <a class='date' via-href="daysix" href='#daysix'>
+          <a class='date' via-href="dayeight" href='#dayeight'>
             <h3>SUN</h3>
+            <p>Aug</p>
             <h1>21</h1>
             <p>2 Gms</p>
           </a>
         </div>
       </div>
       <div id="matches">
+      
         <div class="animated slideInLeft group">
-          <div class='date'>
-            <h1>Saturday July 6</h1>
+          <div class="date">
+            <h1>Saturday July 29th</h1>
+            <h3>(Group A)</h3></div>
+          <div class="match">
+            <div class="main">
+              <div class="score_left">
+                <div class="left_wrapper">
+                  <h3>BURKINA FASO</h3>
+                  <img src="https://image.flaticon.com/icons/svg/197/197519.svg">
+                </div>
+              </div>
+              <div class="info">
+                <h2>0</h2>
+                <h2>VS</h2>
+                <h2>0</h2>
+              </div>
+              <div class="score_right">
+                <div class="right_wrapper">
+                  <img src="https://image.flaticon.com/icons/svg/197/197438.svg">
+                  <h3>SOMALIA</h3>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="location">
+                <h3>2:00pm - 3:30pm</h3>
+              </div>
+            </div>
           </div>
           <div class="match">
-              <div class="main">
-                  <div class="score_left">
-                      <div class="left_wrapper">
-                          <h3>MEXICO</h3>
-                          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojRjBGMEYwOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNEODAwMjc7IiBkPSJNNTEyLDI1NmMwLTEwMS40OTQtNTkuMDY1LTE4OS4xOS0xNDQuNjk2LTIzMC41OTh2NDYxLjE5NUM0NTIuOTM1LDQ0NS4xOSw1MTIsMzU3LjQ5NCw1MTIsMjU2eiIvPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiM2REE1NDQ7IiBkPSJNMCwyNTZjMCwxMDEuNDk0LDU5LjA2NSwxODkuMTksMTQ0LjY5NiwyMzAuNTk4VjI1LjQwMkM1OS4wNjUsNjYuODEsMCwxNTQuNTA2LDAsMjU2eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzZEQTU0NDsiIGQ9Ik0xODkuMjE3LDI1NmMwLDM2Ljg4MywyOS45LDY2Ljc4Myw2Ni43ODMsNjYuNzgzczY2Ljc4My0yOS45LDY2Ljc4My02Ni43ODN2LTIyLjI2MUgxODkuMjE3VjI1NnoiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDojRkY5ODExOyIgZD0iTTM0NS4wNDMsMjExLjQ3OGgtNjYuNzgzYzAtMTIuMjk0LTkuOTY3LTIyLjI2MS0yMi4yNjEtMjIuMjYxcy0yMi4yNjEsOS45NjctMjIuMjYxLDIyLjI2MWgtNjYuNzgzICBjMCwxMi4yOTUsMTAuNzA5LDIyLjI2MSwyMy4wMDIsMjIuMjYxaC0wLjc0MWMwLDEyLjI5NSw5Ljk2NiwyMi4yNjEsMjIuMjYxLDIyLjI2MWMwLDEyLjI5NSw5Ljk2NiwyMi4yNjEsMjIuMjYxLDIyLjI2MWg0NC41MjIgIGMxMi4yOTUsMCwyMi4yNjEtOS45NjYsMjIuMjYxLTIyLjI2MWMxMi4yOTUsMCwyMi4yNjEtOS45NjYsMjIuMjYxLTIyLjI2MWgtMC43NDJDMzM0LjMzNSwyMzMuNzM5LDM0NS4wNDMsMjIzLjc3MywzNDUuMDQzLDIxMS40NzggIHoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
-                          />
-                      </div>
-                  </div>
-                  <div class="info">
-                      <h2>1</h2>
-                      <h2>VS</h2>
-                      <h2>0</h2>
-                  </div>
-                  <div class="score_right">
-                      <div class="right_wrapper">
-                          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6I0Q4MDAyNzsiIGQ9Ik0zNjcuMzA0LDI1LjQwMkMzMzMuNjQ4LDkuMTI4LDI5NS44OSwwLDI1Niwwcy03Ny42NDgsOS4xMjgtMTExLjMwNCwyNS40MDJMMTIyLjQzNSwyNTYgIGwyMi4yNjEsMjMwLjU5OEMxNzguMzUyLDUwMi44NzIsMjE2LjExLDUxMiwyNTYsNTEyczc3LjY0OC05LjEyOCwxMTEuMzA0LTI1LjQwMkwzODkuNTY1LDI1NkwzNjcuMzA0LDI1LjQwMnoiLz4KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGREE0NDsiIHBvaW50cz0iMjU1Ljk5OCwxNjYuOTU3IDI3OC4wOTgsMjM0Ljk3NiAzNDkuNjI2LDIzNC45NzYgMjkxLjc2MiwyNzcuMDIgMzEzLjg2MywzNDUuMDQzICAgMjU1Ljk5OCwzMDMuMDAyIDE5OC4xMzMsMzQ1LjA0MyAyMjAuMjM4LDI3Ny4wMiAxNjIuMzc0LDIzNC45NzYgMjMzLjg5NywyMzQuOTc2ICIvPgo8cGF0aCBzdHlsZT0iZmlsbDojNDk2RTJEOyIgZD0iTTE0NC42OTYsMjUuNDExQzU5LjA2Niw2Ni44MTcsMCwxNTQuNTA2LDAsMjU2czU5LjA2NiwxODkuMTgzLDE0NC42OTYsMjMwLjU4OVYyNS40MTF6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRkRBNDQ7IiBkPSJNMzY3LjMwNCwyNS40MTF2NDYxLjE3OEM0NTIuOTM0LDQ0NS4xODMsNTEyLDM1Ny40OTMsNTEyLDI1NlM0NTIuOTM0LDY2LjgxNywzNjcuMzA0LDI1LjQxMXoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
-                          />
-                          <h3>CAMEROON</h3>
-                      </div>
-                  </div>
+            <div class="main">
+              <div class="score_left">
+                <div class="left_wrapper">
+                  <h3>USA</h3>
+                  <img src="https://image.flaticon.com/icons/svg/197/197484.svg">
+                </div>
               </div>
-              <div class="footer">
-                  <div class="location">
-                      <h3>Location: Field 1</h3>
-                  </div>
+              <div class="info">
+                <h2>0</h2>
+                <h2>VS</h2>
+                <h2>0</h2>
               </div>
+              <div class="score_right">
+                <div class="right_wrapper">
+                  <img src="https://image.flaticon.com/icons/svg/197/197622.svg">
+                  <h3>EL SALVADOR</h3>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="location">
+                <h3>3:30pm - 5:00pm</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animated slideInLeft group">
+          <div class="date">
+            <h1>Saturday July 29th</h1>
+            <h3>(Group B)</h3></div>
+          <div class="match">
+            <div class="main">
+              <div class="score_left">
+                <div class="left_wrapper">
+                  <h3>VIETNAM</h3>
+                  <img src="https://image.flaticon.com/icons/svg/197/197473.svg">
+                </div>
+              </div>
+              <div class="info">
+                <h2>0</h2>
+                <h2>VS</h2>
+                <h2>0</h2>
+              </div>
+              <div class="score_right">
+                <div class="right_wrapper">
+                  <img src="https://image.flaticon.com/icons/svg/197/197627.svg">
+                  <h3>NIGERIA</h3>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="location">
+                <h3>2:00pm - 3:30pm</h3>
+              </div>
+            </div>
           </div>
           <div class="match">
-              <div class="main">
-                  <div class="score_left">
-                      <div class="left_wrapper">
-                          <h3>SOMALI</h3>
-                          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojMzM4QUYzOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+Cjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGMEYwRjA7IiBwb2ludHM9IjI1NiwxMzMuNTY1IDI4My42MjgsMjE4LjU5NCAzNzMuMDMyLDIxOC41OTQgMzAwLjcwMiwyNzEuMTQ0IDMyOC4zMywzNTYuMTc0IDI1NiwzMDMuNjIzICAgMTgzLjY3LDM1Ni4xNzQgMjExLjI5OCwyNzEuMTQ0IDEzOC45NjcsMjE4LjU5NCAyMjguMzcyLDIxOC41OTQgIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
-                          />
-                      </div>
-                  </div>
-                  <div class="info">
-                      <h2>4</h2>
-                      <h2>VS</h2>
-                      <h2>2</h2>
-                  </div>
-                  <div class="score_right">
-                      <div class="right_wrapper">
-                          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojRjBGMEYwOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0Q4MDAyNzsiIGQ9Ik0yNDQuODcsMjU2SDUxMmMwLTIzLjEwNi0zLjA4LTQ1LjQ5LTguODE5LTY2Ljc4M0gyNDQuODdWMjU2eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0Q4MDAyNzsiIGQ9Ik0yNDQuODcsMTIyLjQzNWgyMjkuNTU2Yy0xNS42NzEtMjUuNTcyLTM1LjcwOC00OC4xNzUtNTkuMDctNjYuNzgzSDI0NC44N1YxMjIuNDM1eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0Q4MDAyNzsiIGQ9Ik0yNTYsNTEyYzYwLjI0OSwwLDExNS42MjYtMjAuODI0LDE1OS4zNTYtNTUuNjUySDk2LjY0NEMxNDAuMzc0LDQ5MS4xNzYsMTk1Ljc1MSw1MTIsMjU2LDUxMnoiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNEODAwMjc7IiBkPSJNMzcuNTc0LDM4OS41NjVoNDM2Ljg1MmMxMi41ODEtMjAuNTI5LDIyLjMzOC00Mi45NjksMjguNzU1LTY2Ljc4M0g4LjgxOSAgIEMxNS4yMzYsMzQ2LjU5NiwyNC45OTMsMzY5LjAzNiwzNy41NzQsMzg5LjU2NXoiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDojMDA1MkI0OyIgZD0iTTExOC41ODQsMzkuOTc4aDIzLjMyOWwtMjEuNywxNS43NjVsOC4yODksMjUuNTA5bC0yMS42OTktMTUuNzY1TDg1LjEwNCw4MS4yNTJsNy4xNi0yMi4wMzcgIEM3My4xNTgsNzUuMTMsNTYuNDEyLDkzLjc3Niw0Mi42MTIsMTE0LjU1Mmg3LjQ3NWwtMTMuODEzLDEwLjAzNWMtMi4xNTIsMy41OS00LjIxNiw3LjIzNy02LjE5NCwxMC45MzhsNi41OTYsMjAuMzAxbC0xMi4zMDYtOC45NDEgIGMtMy4wNTksNi40ODEtNS44NTcsMTMuMTA4LTguMzcyLDE5Ljg3M2w3LjI2NywyMi4zNjhoMjYuODIybC0yMS43LDE1Ljc2NWw4LjI4OSwyNS41MDlsLTIxLjY5OS0xNS43NjVsLTEyLjk5OCw5LjQ0NCAgQzAuNjc4LDIzNC41MzcsMCwyNDUuMTg5LDAsMjU2aDI1NmMwLTE0MS4zODQsMC0xNTguMDUyLDAtMjU2QzIwNS40MjgsMCwxNTguMjg1LDE0LjY3LDExOC41ODQsMzkuOTc4eiBNMTI4LjUwMiwyMzAuNCAgbC0yMS42OTktMTUuNzY1TDg1LjEwNCwyMzAuNGw4LjI4OS0yNS41MDlsLTIxLjctMTUuNzY1aDI2LjgyMmw4LjI4OC0yNS41MDlsOC4yODgsMjUuNTA5aDI2LjgyMmwtMjEuNywxNS43NjVMMTI4LjUwMiwyMzAuNHogICBNMTIwLjIxMywxMzAuMzE3bDguMjg5LDI1LjUwOWwtMjEuNjk5LTE1Ljc2NWwtMjEuNjk5LDE1Ljc2NWw4LjI4OS0yNS41MDlsLTIxLjctMTUuNzY1aDI2LjgyMmw4LjI4OC0yNS41MDlsOC4yODgsMjUuNTA5aDI2LjgyMiAgTDEyMC4yMTMsMTMwLjMxN3ogTTIyMC4zMjgsMjMwLjRsLTIxLjY5OS0xNS43NjVMMTc2LjkzLDIzMC40bDguMjg5LTI1LjUwOWwtMjEuNy0xNS43NjVoMjYuODIybDguMjg4LTI1LjUwOWw4LjI4OCwyNS41MDloMjYuODIyICBsLTIxLjcsMTUuNzY1TDIyMC4zMjgsMjMwLjR6IE0yMTIuMDM5LDEzMC4zMTdsOC4yODksMjUuNTA5bC0yMS42OTktMTUuNzY1bC0yMS42OTksMTUuNzY1bDguMjg5LTI1LjUwOWwtMjEuNy0xNS43NjVoMjYuODIyICBsOC4yODgtMjUuNTA5bDguMjg4LDI1LjUwOWgyNi44MjJMMjEyLjAzOSwxMzAuMzE3eiBNMjEyLjAzOSw1NS43NDNsOC4yODksMjUuNTA5bC0yMS42OTktMTUuNzY1TDE3Ni45Myw4MS4yNTJsOC4yODktMjUuNTA5ICBsLTIxLjctMTUuNzY1aDI2LjgyMmw4LjI4OC0yNS41MDlsOC4yODgsMjUuNTA5aDI2LjgyMkwyMTIuMDM5LDU1Ljc0M3oiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
-                          />
-                          <h3>USA</h3>
-                      </div>
-                  </div>
+            <div class="main">
+              <div class="score_left">
+                <div class="left_wrapper">
+                  <h3>GUATEMALA</h3>
+                  <img src="https://image.flaticon.com/icons/svg/197/197597.svg">
+                </div>
               </div>
-              <div class="footer">
-                  <div class="location">
-                      <h3>Location: Field 2</h3>
-                  </div>
+              <div class="info">
+                <h2>0</h2>
+                <h2>VS</h2>
+                <h2>0</h2>
               </div>
+              <div class="score_right">
+                <div class="right_wrapper">
+                  <img src="https://image.flaticon.com/icons/svg/197/197425.svg">
+                  <h3>DJIBOUTI</h3>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="location">
+                <h3>3:30pm - 5:00pm</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animated slideInLeft group">
+          <div class="date">
+            <h1>Saturday July 29th</h1>
+            <h3>(Group C)</h3></div>
+          <div class="match">
+            <div class="main">
+              <div class="score_left">
+                <div class="left_wrapper">
+                  <h3>HONDURAS</h3>
+                  <img src="https://image.flaticon.com/icons/svg/197/197610.svg">
+                </div>
+              </div>
+              <div class="info">
+                <h2>0</h2>
+                <h2>VS</h2>
+                <h2>0</h2>
+              </div>
+              <div class="score_right">
+                <div class="right_wrapper">
+                  <img src="https://image.flaticon.com/icons/svg/197/197476.svg">
+                  <h3>SOUTH SUDAN</h3>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="location">
+                <h3>5:00pm - 6:30pm</h3>
+              </div>
+            </div>
           </div>
           <div class="match">
-              <div class="main">
-                  <div class="score_left">
-                      <div class="left_wrapper">
-                          <h3>EGYPT</h3>
-                          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojRjBGMEYwOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNEODAwMjc7IiBkPSJNMjU2LDBDMTQ1LjkyOSwwLDUyLjA5NCw2OS40NzIsMTUuOTIzLDE2Ni45NTdoNDgwLjE1NUM0NTkuOTA2LDY5LjQ3MiwzNjYuMDcxLDAsMjU2LDB6Ii8+CjxwYXRoIGQ9Ik0yNTYsNTEyYzExMC4wNzEsMCwyMDMuOTA2LTY5LjQ3MiwyNDAuMDc3LTE2Ni45NTdIMTUuOTIzQzUyLjA5NCw0NDIuNTI4LDE0NS45MjksNTEyLDI1Niw1MTJ6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRjk4MTE7IiBkPSJNMzQ1LjA0MywyMjguMTc0aC02Ni43ODNjMC0xMi4yOTQtOS45NjctMjIuMjYxLTIyLjI2MS0yMi4yNjFzLTIyLjI2MSw5Ljk2Ny0yMi4yNjEsMjIuMjYxaC02Ni43ODMgIGMwLDEyLjI5NSwxMC43MDksMjIuMjYxLDIzLjAwMywyMi4yNjFoLTAuNzQyYzAsMTIuMjk1LDkuOTY2LDIyLjI2MSwyMi4yNjEsMjIuMjYxYzAsMTIuMjk1LDkuOTY2LDIyLjI2MSwyMi4yNjEsMjIuMjYxaDQ0LjUyMiAgYzEyLjI5NSwwLDIyLjI2MS05Ljk2NiwyMi4yNjEtMjIuMjYxYzEyLjI5NSwwLDIyLjI2MS05Ljk2NiwyMi4yNjEtMjIuMjYxaC0wLjc0MUMzMzQuMzM1LDI1MC40MzUsMzQ1LjA0MywyNDAuNDY5LDM0NS4wNDMsMjI4LjE3NCAgeiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
-                      </div>
-                  </div>
-                  <div class="info">
-                      <h2>2</h2>
-                      <h2>VS</h2>
-                      <h2>3</h2>
-                  </div>
-                  <div class="score_right">
-                      <div class="right_wrapper">
-                          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojRjBGMEYwOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6IzZEQTU0NDsiIGQ9Ik0wLDI1NmMwLDExMC4wNzIsNjkuNDcyLDIwMy45MDYsMTY2Ljk1NywyNDAuMDc4VjE1LjkyNEM2OS40NzIsNTIuMDk0LDAsMTQ1LjkzLDAsMjU2eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzZEQTU0NDsiIGQ9Ik01MTIsMjU2YzAtMTEwLjA3LTY5LjQ3Mi0yMDMuOTA2LTE2Ni45NTctMjQwLjA3NnY0ODAuMTU1QzQ0Mi41MjgsNDU5LjkwNiw1MTIsMzY2LjA3Miw1MTIsMjU2eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                          <h3>NIGERIA</h3>
-                      </div>
-                  </div>
+            <div class="main">
+              <div class="score_left">
+                <div class="left_wrapper">
+                  <h3>BRAZIL</h3>
+                  <img src="https://image.flaticon.com/icons/svg/197/197386.svg">
+                </div>
               </div>
-              <div class="footer">
-                  <div class="location">
-                      <h3>Location: Field 2</h3>
-                  </div>
+              <div class="info">
+                <h2>0</h2>
+                <h2>VS</h2>
+                <h2>0</h2>
               </div>
+              <div class="score_right">
+                <div class="right_wrapper">
+                  <img src="https://image.flaticon.com/icons/svg/197/197397.svg">
+                  <h3>MEXICO</h3>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="location">
+                <h3>5:00pm - 6:30pm</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -208,6 +304,14 @@
             selector:'#matches',
             templateUrl:'matches/daysix.html'
           }],
+          dayseven:[{
+            selector:'#matches',
+            templateUrl:'matches/dayseven.html'
+          }],
+          dayeight:[{
+            selector:'#matches',
+            templateUrl:'matches/dayeight.html'
+          }],          
           defaultView: {
               view: 'dayone'
           }
