@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <style media="screen">
+      body {
+        min-height: 2000px;
+        padding-top: 70px;
+      }
+      
+      .bd-example {
+        padding:1.5rem;
+        margin-right:0;
+        margin-bottom:0;
+        margin-left:0;
+        border-width:.2rem;
+      }
+      
+      .bd-example {
+        position:relative;
+        margin:1rem -1rem;
+        border:solid #f7f7f9;
+      }
+      
+      .list-group .list-group-item > .date,button {
+        float:right;
+      }
+      
+      .list-group-item .date {
+        margin-right:25px;
+        margin-top:5px;
+      }
+      
+      .list-group-item div {
+        display:inline;
+        float:left;
+        margin-top:5px;
+      }
+          
+      .list-group-item {
+        overflow:auto;
+      }
+      
+      .navbar-default {
+        background-image:none;
+        background-color:#c0392b !important;
+        border-color:#c0392b !important;
+        border-radius:0px;
+        color:white !important;
+      }
+      
+      .active a{
+        color:white !important;
+        background-image:none !important;
+        background-color:#962e22 !important;
+      }
+
+      .navbar-default .navbar-brand {
+        color:white;
+      }
+      
+      .navbar-default .navbar-nav>li>a{
+        color:white;
+        text-shadow:none;
+      }
+      
+      
+      .create-match {
+        padding:1%;
+      }
+
+    </style>
+    
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body>
+  <div id='app'>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#" @click="currentView='create-post'">Create Match</a></li>
+            <li><a href="#" @click="currentView='matches'">Matches</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      
+      <br>
+      <br>
+      <br>
+      
+      <div class="container">
+        <component :is="currentView"></component>
+      </div>
+      
+    </div> <!-- /container -->
+
+  </div>
+    
+    <template id="create-template"> 
+      <div class='create-match'>
+        <form class="form-horizontal container" role="form">
+            <div class='form-row bd-example' style='margin: auto;width: 75%;'>
+              <div class="form-group">
+                  <div class="col-xs-8 col-xs-offset-1">
+                    <label for="firstTeam" class='control-label'>First Team:</label>
+                    <select class="form-control" id="firstTeam">
+                      <option>Burkina Faso</option>
+                      <option>Somalia</option>
+                      <option>Nigeria</option>
+                      <option>El Salvador</option>
+                      <option>Honduras</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-2">
+                    <label for="firstTeam">Score:</label>
+                    <input type="text" class='form-control' name="firstTeam" id="firstScore">     
+                  </div>
+              </div>
+              <br>
+              <div class="form-group">
+                  <div class="col-xs-8 col-xs-offset-1">
+                    <label for="firstTeam" class='control-label'>Second Team:</label>
+                    <select class="form-control" id="secondTeam">
+                      <option>Burkina Faso</option>
+                      <option>Somalia</option>
+                      <option>Nigeria</option>
+                      <option>El Salvador</option>
+                      <option>Honduras</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-2">
+                    <label for="firstTeam">Score:</label>
+                    <input type="text" class='form-control' name="secondScore" id="secondScore">     
+                  </div>
+              </div>
+              <br>
+              <div class="form-group">
+                  <div class="col-xs-6 col-xs-offset-1">
+                    <label for="firstTeam" class='control-label'>Date:</label>
+                    <input type="text" class='form-control' name="date" id="date">
+                  </div>
+                  <div class="col-xs-4">
+                    <label for="firstTeam">Time:</label>
+                    <input type="text" class='form-control' name="time" id="time">     
+                  </div>
+
+              </div>
+              <div class='form-group'>
+                <div class='col-xs-11'>
+                  <br>
+                  <br>
+                  <button type="button" class="btn btn-lg btn-danger">Done</button>
+                </div>
+              </div>              
+            </div>
+        </form>
+      </div>
+    </template>
+    
+    <template id="matches">
+      <div>        
+        <ul class="list-group" v-for='(match,index) in items'>
+        <li class="list-group-item">
+          <div>
+            <span>({{match.teamOne.country}} {{match.teamOne.score}})</span>
+            <span> vs </span>
+            <span>({{match.teamTwo.country}} {{match.teamOne.score}})</span>
+          </div>
+          <button type='button' class='btn btn-danger btn-sm'> Edit</button>
+          <span class='date'> {{match.date}} ({{match.time}}) </span>
+        </li>
+      </ul>
+      </div>
+    </template>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <script src="./httpVueLoader.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/vue"></script>
+    
+    <script type="text/javascript">
+      var matches = [
+        {
+          group:'A',
+          teamOne:{
+            country:'Burkina Faso',
+            score:0
+          },
+          teamTwo:{
+            country:'Somalia',
+            score:0
+          },
+          date:'07/29/17',
+          time:'2:00pm - 3:30pm'
+        },
+        {
+          group:'A',
+          teamOne:{
+            country:'USA',
+            score:0
+          },
+          teamTwo:{
+            country:'El Salvador',
+            score:0
+          },
+          date:'07/29/17',
+          time:'3:30pm - 5:00pm'
+        },
+        {
+          group:'A',
+          teamOne:{
+            country:'Honduras',
+            score:0
+          },
+          teamTwo:{
+            country:'South Sudan',
+            score:0
+          },
+          date:'07/29/17',
+          time:'5:00pm - 6:30pm'          
+        }
+      ]
+      
+      Vue.component('matches', {
+        template: '#matches',
+        data: function () {
+          return {
+            items:matches
+          }
+        }
+      })
+      
+      Vue.component('create-post', {
+        template: '#create-template'
+      })
+        
+      var app = new Vue({
+        el: '#app',
+        data: {
+          currentView: 'create-post',
+        }
+      })
+      
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+    </script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/script>')</script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
